@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@drawable/back_img"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/des_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#99DEBCAA"
+        android:text="Десерты"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/snacks_btn"
+        app:layout_constraintStart_toStartOf="@+id/snacks_btn"
+        app:layout_constraintTop_toBottomOf="@+id/snacks_btn" />
+
+    <Button
+        android:id="@+id/snacks_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#99CF98A9"
+        android:text="Закуски"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/salads_btn"
+        app:layout_constraintStart_toStartOf="@+id/salads_btn"
+        app:layout_constraintTop_toBottomOf="@+id/salads_btn" />
+
+    <Button
+        android:id="@+id/salads_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#998B86A8"
+        android:text="Салаты"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/s_course_btn"
+        app:layout_constraintStart_toStartOf="@+id/s_course_btn"
+        app:layout_constraintTop_toBottomOf="@+id/s_course_btn" />
+
+    <Button
+        android:id="@+id/s_course_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#99D099AA"
+        android:text="Вторые блюда"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/f_course_btn"
+        app:layout_constraintStart_toStartOf="@+id/f_course_btn"
+        app:layout_constraintTop_toBottomOf="@+id/f_course_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="Книга рецептов"
+        android:textAlignment="center"
+        android:textColor="#CECED8"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/f_course_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#99DEBCAA"
+        android:onClick="f_btn_click"
+        android:text="Первые блюда"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
